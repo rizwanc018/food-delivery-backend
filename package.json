@@ -1,0 +1,25 @@
+{
+    "name": "backend",
+    "module": "src/server.ts",
+    "type": "module",
+    "scripts": {
+        "dev": "bun --hot src/server.ts",
+        "build": "bun build src/server.ts --outdir ./dist --target bun"
+    },
+    "devDependencies": {
+        "@types/bun": "latest",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.5.2",
+        "prisma": "^6.16.2"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@prisma/client": "^6.16.2",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.2",
+        "express": "^5.1.0"
+    }
+}
